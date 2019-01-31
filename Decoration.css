@@ -35,12 +35,19 @@ img {
   border-radius: 25%;
 }
 
-.dropdown {
+.dropdown  {
   position: relative;
     display: inline-block;
 }
-
-.dropdown .dropbtn {
+.dropbtn_a {
+  position: relative;
+    display: inline-block;
+}
+.dropbtn_b {
+  position: relative;
+    display: inline-block;
+}
+.dropdown .dropbtn_a  {
   font-size: 16px;
   border: none;
   outline: none;
@@ -50,11 +57,47 @@ img {
   font-family: inherit;
   margin: 0;
 }
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+.dropdown .dropbtn_b {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
 }
-
+.dropdown .dropbtn_c {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.dropdown .dropbtn_d {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.dropdown .dropbtn_e {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+/*Undefined*/
 .dropdown-content {
   display: none;
   position: absolute;
@@ -72,11 +115,33 @@ img {
   display: block;
   text-align: left;
 }
+/*Undefined*/
 
-.dropdown-content a:hover {
-  background-color: #ddd;
+/* defined*/
+.dropdown-content_a {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown-content_a  a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
   display: block;
+  text-align: left;
 }
+/* defined*/
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content_a  {display: block;}
+.dropdown:hover .dropbtn_a {background-color: red;}
+.dropdown:hover .dropbtn_b {background-color: red;}
+.dropdown:hover .dropbtn_c {background-color: red;}
+.dropdown:hover .dropbtn_d {background-color: red;}
+.dropdown:hover .dropbtn_e {background-color: red;}
